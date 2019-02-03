@@ -1,0 +1,46 @@
+/* SECTION */
+section {
+	background-color: transparent;
+	box-shadow: none;
+	margin: 0px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+section h1 {
+	padding: 20px 20px 10px;
+}
+section h2 {
+	padding: 0px 20px;
+}
+section p {
+	padding: 0px 20px 20px;
+}
+section div {
+	width: 49.25%;
+	background-color: white;
+	box-shadow: 0px 0px 2px silver;
+}
+section div.left {
+	margin-right: 0.75%;
+}
+section div.right {
+	margin-left: 0.75%;
+}
+section div.bottom {
+	width: 100%;
+	margin-top: 1.5%;
+}
+section div div {
+	background-color: transparent;
+	box-shadow: none;
+}
+section div div p {
+	padding: 0px 20px;
+}
+section div div.smleft {
+	float: left;
+}
+section div div.smright {
+	float: right;
+}

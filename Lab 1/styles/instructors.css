@@ -1,0 +1,30 @@
+/* SECTION */
+section {
+	background-color: transparent;
+	box-shadow: none;
+	margin: 0px;
+	width: 100%;
+}
+section div img{
+	width: 20%;
+	float: left;
+	border-radius: 50%;
+	padding: 2%;
+}
+section h1 {
+	padding: 20px 20px 5px;
+}
+section div.instructor {
+	background-color: white;
+	box-shadow: 0px 0px 2px silver;
+	margin: 0px 0px 15px;
+}
+section div.desc {
+	width: 76%;
+	float: right;
+}
+section div::after {
+	content: "";
+	clear: both;
+	display: block;
+}

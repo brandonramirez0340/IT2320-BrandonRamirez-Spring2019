@@ -1,0 +1,135 @@
+/* ELEMENTS */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	min-height: 100%;
+	background-image: linear-gradient(
+		white, lightgray);
+}
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    width: 990px;
+	margin: auto;
+}
+/* HEADER */
+header {
+	padding: 15px 0px 10px;
+	margin-top: 15px;
+	border-top: 1px solid silver;
+	border-bottom: 1px solid silver;
+}
+header h1 {
+	text-align: center;
+	font-size: 75px;
+	color: black;
+	text-shadow: 0px 0px 5px gray;
+}
+header h2 {
+	text-align: center;
+	font-size: 30px;
+	color: maroon;
+	transform: translate(0px, -5px)
+}
+/* NAV */
+#nav_menu ul {
+	list-style-type: none;
+	margin: 15px 0px;
+	box-shadow: 0px 0px 2px silver;
+}
+#nav_menu ul li {
+	margin: 0px;
+}
+#nav_menu ul li a {
+	width: 25%;
+	display: block;
+	float: left;
+    text-align: center;
+    padding: 15px 0px;
+    text-decoration: none;
+	background-color: white;
+	color: gray;
+	font-weight: bold;
+}
+#nav_menu a.current {
+	color: brown;
+	background: whitesmoke;
+}
+#nav_menu ul li:hover a:hover {
+	color: brown;
+	background: whitesmoke;
+}
+#nav_menu ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/* MAIN */
+main h1 {
+	color: darkslategray;
+}
+main h2 {
+	padding: 0px 20px 5px;
+	font-size: 16px;
+	color: gray;
+	font-weight: bold;
+}
+main p {
+	color: gray;
+}
+main a {
+	color: brown;
+	text-decoration: none;
+}
+main a:hover {
+	color: maroon;
+	text-decoration: none;
+}
+
+/* SECTION */
+section {
+	float: left;
+	width: 73.5%;
+	background-color: white;
+	box-shadow: 0px 0px 2px silver;
+}
+section h1 {
+	padding: 20px 20px 15px;
+}
+section p {
+	padding: 0px 20px 20px;
+}
+/* ASIDE */
+aside {
+	float: right;
+	width: 25%;
+}
+aside h1 {
+	padding: 20px 20px 5px;
+}
+aside h1.category {
+	padding: 0px 0px 10px;
+}
+aside h2 {
+	padding-top: 20px;
+}
+aside p {
+	padding: 0px 20px 20px;
+}
+aside div {
+	background-color: white;
+	box-shadow: 0px 0px 2px silver;
+	margin-bottom: 15px;
+}
+/* FOOTER */
+footer {
+	clear: both;
+	padding: 1em 0 1em 0;
+}
+footer p {
+	text-align: center;
+	font-size: 75%;
+	color: maroon;
+}
