@@ -12,7 +12,7 @@ function displayFruits()
     var fruits = ["apple","orange","banana","grapes","guava","coconut","grapefruit","kiwi","watermelon","pineapple","avocado"];
     var displayText="";
 
-    for (i=0;i<5;i++)
+    for (i=0;i<fruits.length;i++)
     {
         displayText += "<p>"+ fruits[i];    
         displayText += " is "+ IsTropical(fruits[i]);
@@ -35,16 +35,16 @@ function IsTropical(fruit)
             break;
         case "coconut":
             tropicalMsg = "tropical";
+            break;
         case "grapes":          
             tropicalMsg = "not tropical";
             break;
         case "orange":
             tropicalMsg = "tropical";           
+            break;
         case "papaya":
             tropicalMsg = "tropical";           
-            break;
-        case "peach":
-            tropicalMsg = "tropical";                          
+            break;                   
         case "guava":      
             tropicalMsg = "sub tropical";           
             break;   
@@ -52,11 +52,16 @@ function IsTropical(fruit)
             tropicalMsg = "tropical";           
             break;
         case "kiwi":
-            tropicalMsg = "tropical";           
+            tropicalMsg = "not tropical";    
+            break;       
         case "avocado":
             tropicalMsg = "sub tropical";
+            break;
         case "grapefruit":
             tropicalMsg = "tropical";           
+            break;
+        case "watermelon":
+            tropicalMsg = "not tropical";
             break;
         default:
             tropicalMsg = "unable to determine fruit type";            
@@ -69,20 +74,20 @@ function AddNumbers()
     document.getElementById("display-panel").innerHTML="";
 
     var numbers = [2,4,6,8,10,12,14];
+    var sum=0;    
 
-    for (i=1;i<=numbers.length;i++)
+    for (i=0;i<numbers.length;i++)
     {
-        var sum=0;    
         sum+=numbers[i];
     }
     
-    document.getElementById("display-panel").innerHTML="Sum of numbers "+numbers+" is equal to "+sum;
+    document.getElementById("display-panel").innerHTML="<p>Sum of numbers "+numbers+" is equal to "+sum+"</p>";
     
 }
 
 function EvenOrOddCalc()
 {    
-    var evenOddFlag = EvenOrOdd;
+    var evenOddFlag = EvenOrOdd();
     console.log(evenOddFlag);
 }
 
@@ -92,13 +97,13 @@ function EvenOrOdd()
     document.getElementById("display-panel").innerHTML="";
     var evenOdd = [13,4,2,67,94,35,654];
     var even=odd="";
-    var i=j=0;
+    var i=0;
     var flag=0;
 
    for(i=0;i<evenOdd.length;i++)    
    {
         flag = evenOdd[i]%2;
-        if (flag = 0)
+        if (flag == 0)
             even+=" "+evenOdd[i];
         else
             odd+=" "+evenOdd[i];
@@ -113,11 +118,11 @@ function EvenOrOdd()
 
 function GenerateNumbers()
 {
-    //There are 9 prime numbers and 10 odd numbers.Fix the bugs so the right count displays
+    //There are 8 prime numbers and 9 odd numbers.Fix the bugs so the right count displays
 
     var num = [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
-    var factorFound;
     var prime=0;
+    var odd=0;
     for (i=0;i<num.length;i++)
     {  
         
@@ -125,22 +130,22 @@ function GenerateNumbers()
             prime++;
         else
         {
-            for (j=2;j<num[i];j++) //Check from 2 to num-1 and see if the number has factors other than 1 and itself
+            var factorFound=false;
+            for (j=2;j<num[i]-1;j++) //Check from 2 to num-1 and see if the number has factors other than 1 and itself
             {
                 if ((num[i] % j)==0)                 
-                    factorFound++;                    
+                    factorFound=true;                    
             }
         
             if (!factorFound) //No factors
                 prime++;
         }
 
-        var odd=0;
         if (num[i]%2 != 0)
             odd++;
 
    }
-    document.getElementById("display-panel").innerHTML="Given array "+num;
-    document.getElementById("display-panel").innerHTML+=" Prime count = "+prime;
-    document.getElementById("display-panel").innerHTML+=" Odd count "+ odd;
+    document.getElementById("display-panel").innerHTML="<p>Given array: "+num+"</p>";
+    document.getElementById("display-panel").innerHTML+="<p>Prime count = "+prime+"</p>";
+    document.getElementById("display-panel").innerHTML+="<p>Odd count = "+ odd+"</p>";
 }
