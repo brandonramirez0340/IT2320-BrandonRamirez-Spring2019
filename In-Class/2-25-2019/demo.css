@@ -1,0 +1,85 @@
+#buttonContainer
+{
+    width: 100%;
+}
+
+div.button-a {    
+    background-image: linear-gradient(lightblue, teal);    
+    width: 90px;    
+    float: left;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 15px;
+    box-shadow:10px 10px 20px lightgrey;  
+}
+
+div.button-b {    
+    background-image: linear-gradient(lightgreen, teal);    
+    width: 90px;    
+    float: left;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 15px;
+    box-shadow:10px 10px 20px lightgrey;  
+}
+
+div.button-c {    
+    background-image: linear-gradient(lightyellow, teal);    
+    width: 90px;    
+    float: left;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 15px;
+    box-shadow:10px 10px 20px lightgrey;  
+}
+
+div.biggerbutton{
+    width: 220px; 
+    font-size: 1.1em;   
+}
+
+p{
+    color: whitesmoke;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+a{
+     
+    display: block;
+}
+#contentContainer
+{
+    float: left;
+    width: 100%;
+}
+#buttonContainer2
+{
+    width: 100%;
+    float: left;
+}
+#contentContainer2
+{
+    width: 100%;
+    float: left;
+}
+#buttonContainer3
+{
+    width: 100%;
+    float: left;
+}
+#buttonContainer3 p
+{
+    color: black;   
+}
+#contentContainer3
+{    
+    width: 100%;
+    float: left;
+}
+
+#contentContainer3 p
+{
+    color: black;   
+    text-align: left;
+}

@@ -1,0 +1,18 @@
+HideContent function:
+1. Add code to hide content for div 2
+
+ShowContent function:
+2. Add code to show content for div 2
+
+ChangeContent function:
+3. Write code to change content 4 also
+
+4. Change code so that content 3 will be changed if button 3 is clicked and 
+content4 will be changed when button 4 is clicked
+
+AddAnElement function:
+5. Create a link "a" to http://www.tri-c.edu
+
+ChangeShape function:
+6. Get all links and set their color to "red" , backgroundcolor to "yellow" 
+and fontsize to "1.2em";
