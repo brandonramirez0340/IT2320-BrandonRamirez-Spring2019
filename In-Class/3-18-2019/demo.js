@@ -124,32 +124,45 @@ function AddAnElement()
 {
     //var para = document.createElement("p");
     var para = $("<p></p>");
+    //para.innerHTML = "This is a brand new para that I created dynamically";
+    para.html("This is a brand new para that I created dynamically");
+    //para.id="newpara";
+    para.attr("id", "newpara");
     //var parent = document.getElementById("contentContainer3");
     var parent = $("contentContainer3");
-    //para.innerHTML = "This is a brand new para that I created dynamically";
-    //para.id="newpara";
     //parent.appendChild(para);
+    parent.append(para); //append = after
 
-    //Add a link - same parent - www.yahoo.com
-    var link = document.createElement("a");
-    link.innerHTML="New link";
-    link.id = "newlink";
-    link.href="http://www.yahoo.com";
-    parent.appendChild(link);
+    //var link = document.createElement("a");
+    var link = $("<a></a>");
+    //link.innerHTML="New link";
+    link.html("New Link");
+    //link.id = "newlink";
+    link.attr("id", "newlink");
+    //link.href="https://www.yahoo.com";
+    link.attr("href", "https://www.yahoo.com");
+    //parent.appendChild(link);
+    parent.prepend(link); //prepend = before
 
 }
 
 function RemoveAnElement()
 {
-    var elem = document.getElementById("para-a");
-    var parent = document.getElementById("contentContainer3");
-    parent.removeChild(elem);
+    //var elem = document.getElementById("para-a");
+    var elem = $("para-a");
+    //var parent = document.getElementById("contentContainer3");
+    //parent.removeChild(elem);
+    elem.remove();
 
-    var elem = document.getElementById("newpara");
-    var parent = document.getElementById("contentContainer3");
-    parent.removeChild(elem);
+    //var elem = document.getElementById("newpara");
+    var elem = $("newpara");
+    //var parent = document.getElementById("contentContainer3");
+    //parent.removeChild(elem);
+    elem.remove();
 
-    var elem = document.getElementById("newlink");
-    var parent = document.getElementById("contentContainer3");
-    parent.removeChild(elem);
+    //var elem = document.getElementById("newlink");
+    var elem = $("newlink");
+    //var parent = document.getElementById("contentContainer3");
+    //parent.removeChild(elem);
+    elem.remove();
 }
